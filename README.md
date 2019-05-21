@@ -1,1 +1,3 @@
-# libjailbreakd-libjelbrek-
+# libjailbreakd-libjelbrek
+
+libjailbreak for jelbrekd
