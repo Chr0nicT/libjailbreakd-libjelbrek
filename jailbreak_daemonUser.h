@@ -179,8 +179,4 @@ union __ReplyUnion__jbd_jailbreak_daemon_subsystem {
 #ifdef __AfterMigUserHeader
 __AfterMigUserHeader
 #endif /* __AfterMigUserHeader */
-
-
-mach_port_t get_jbd_port(void);
-
 #endif     /* _jailbreak_daemon_user_ */

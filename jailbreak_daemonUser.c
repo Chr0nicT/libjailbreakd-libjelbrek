@@ -270,15 +270,3 @@ mig_external kern_return_t jbd_call
     
     return KERN_SUCCESS;
 }
-
-
-kern_return_t bootstrap_look_up(mach_port_t port, const char *service, mach_port_t *server_port);
-
-mach_port_t get_jbd_port()
-{
-    mach_port_t jbd_port;
-    if (bootstrap_look_up(bootstrap_port, "slice.jailbreakd", &jbd_port)) {
-        return MACH_PORT_NULL;
-    }
-    return jbd_port;
-}

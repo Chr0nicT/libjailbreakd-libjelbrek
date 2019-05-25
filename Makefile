@@ -8,7 +8,7 @@ LDID    = ldid
 
 all: $(OUTDIR)/$(TARGET)
 
-$(OUTDIR)/$(TARGET): libjelbrek.m callJBD.c
+$(OUTDIR)/$(TARGET): libjelbrek.m jailbreak_daemonUser.c
 	$(CC) -dynamiclib -I./ -o $@ $^
 	$(LDID) -S $@
 
